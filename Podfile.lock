@@ -1,0 +1,132 @@
+PODS:
+  - Alamofire (4.7.3)
+  - AlipaySDK-iOS (15.5.5)
+  - BaiduMapKit (4.2.0)
+  - BFKit-Swift (3.2.1)
+  - BMKLocationKit (1.3.0.2)
+  - Closures (0.4)
+  - DatePickerDialog (2.0)
+  - FSCalendar (2.7.9)
+  - IQKeyboardManagerSwift (6.1.1)
+  - JCore (1.2.2)
+  - JPush (3.1.0):
+    - JCore (~> 1.2.0)
+  - Kingfisher (4.10.0)
+  - McPicker (2.0.0)
+  - MJRefresh (3.1.15.7)
+  - Pgyer (2.8.9)
+  - PgyUpdate (1.6)
+  - PlaceholderTextView (0.2.0)
+  - PromiseKit (6.4.0):
+    - PromiseKit/CorePromise (= 6.4.0)
+    - PromiseKit/Foundation (= 6.4.0)
+    - PromiseKit/UIKit (= 6.4.0)
+  - PromiseKit/CoreLocation (6.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/CorePromise (6.4.0)
+  - PromiseKit/Foundation (6.4.0):
+    - PromiseKit/CorePromise
+  - PromiseKit/UIKit (6.4.0):
+    - PromiseKit/CorePromise
+  - SDCycleScrollView (1.75):
+    - SDWebImage (>= 4.0.0)
+  - SDWebImage (4.4.2):
+    - SDWebImage/Core (= 4.4.2)
+  - SDWebImage/Core (4.4.2)
+  - SnapKit (4.0.1)
+  - SwiftProgressHUD (0.0.7)
+  - SwiftyJSON (4.2.0)
+  - SwiftyStarRatingView (1.0.4)
+  - Toast-Swift (4.0.0)
+  - WechatOpenSDK (1.8.2)
+
+DEPENDENCIES:
+  - Alamofire
+  - AlipaySDK-iOS
+  - BaiduMapKit
+  - BFKit-Swift
+  - BMKLocationKit
+  - Closures
+  - DatePickerDialog
+  - FSCalendar
+  - IQKeyboardManagerSwift
+  - JPush
+  - Kingfisher
+  - McPicker
+  - MJRefresh
+  - Pgyer
+  - PgyUpdate
+  - PlaceholderTextView
+  - PromiseKit
+  - PromiseKit/CoreLocation
+  - SDCycleScrollView
+  - SDWebImage
+  - SnapKit
+  - SwiftProgressHUD
+  - SwiftyJSON
+  - SwiftyStarRatingView
+  - Toast-Swift
+  - WechatOpenSDK
+
+SPEC REPOS:
+  https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git:
+    - Alamofire
+    - AlipaySDK-iOS
+    - BaiduMapKit
+    - BFKit-Swift
+    - BMKLocationKit
+    - Closures
+    - DatePickerDialog
+    - FSCalendar
+    - IQKeyboardManagerSwift
+    - JCore
+    - JPush
+    - Kingfisher
+    - McPicker
+    - MJRefresh
+    - Pgyer
+    - PgyUpdate
+    - PlaceholderTextView
+    - PromiseKit
+    - SDCycleScrollView
+    - SDWebImage
+    - SnapKit
+    - SwiftProgressHUD
+    - SwiftyJSON
+    - SwiftyStarRatingView
+    - Toast-Swift
+    - WechatOpenSDK
+  trunk:
+    - SDWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
+  AlipaySDK-iOS: 7b700342e71cb3b626603ce96f9d2fb158acbcfb
+  BaiduMapKit: b6a8f31b3d2e4e5cad4084512a0d9a3878638272
+  BFKit-Swift: 26e366ace73555835f4c142b95b4c2ffa7dd9af4
+  BMKLocationKit: 6c47273f985609be0a0785f2f6f12bb7c1b7e8b6
+  Closures: fe9ecbda045d8d42cc13520209b4ea5208e38248
+  DatePickerDialog: 5e1c24d9fe6506cd45dbc573eed7b0a251b1c09d
+  FSCalendar: a04b09f16f811bc92e82f3cf852a15225233b9d5
+  IQKeyboardManagerSwift: 977affaeb4d6e971975c7790a6850f31d38f1207
+  JCore: f14c0549968a63c22e246a4875aa9d428446f373
+  JPush: 5921e25ad13e0386351079217b009f2039084eac
+  Kingfisher: 43c4b802d8b5256cf1f4379e9cd10b329be6d3e2
+  McPicker: 1d11ad8c07c337a16dd9397e45f321125304cbb0
+  MJRefresh: 697f8ec75ebdbe9207767bb682cf0f51b0d8a41f
+  Pgyer: 830654e51e23f754cce5d8b3ea9ba72be68452eb
+  PgyUpdate: cd6c2ada5928f36a9f904d8f96a9b3b53e190755
+  PlaceholderTextView: 0489c5ccfc0f576d5a627b051131e01f4ab0e2e5
+  PromiseKit: ae3616f45d7bb9bf4ff1e91abc9b7a8c48a340e0
+  SDCycleScrollView: 884b88f0266dd4708a0e1934975c69cb971707b1
+  SDWebImage: 624d6e296c69b244bcede364c72ae0430ac14681
+  SnapKit: 0de968a9fec17499afa29683b05d0c775b6d1c29
+  SwiftProgressHUD: 27d2a9fb4e9f356dbbbfd98477916652cc9b7ac1
+  SwiftyJSON: c4bcba26dd9ec7a027fc8eade48e2c911f229e96
+  SwiftyStarRatingView: a2b0057700e0adeb8e7442c55d99cb53b531d2f4
+  Toast-Swift: 594b5c5e5129f15438e410207e43287f027b3c00
+  WechatOpenSDK: 676feec516a11173eafd1fe64b10d27babf28701
+
+PODFILE CHECKSUM: c55e1de51d97de0fe8b452165b6ab9711ff45b42
+
+COCOAPODS: 1.9.3
