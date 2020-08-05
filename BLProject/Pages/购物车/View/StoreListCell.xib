@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="64" id="B0d-FY-Xnn" customClass="StoreListCell" customModule="BLProject" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="62"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="B0d-FY-Xnn" id="y0g-FP-alH">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zXz-Xf-g5P">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="61.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mendianicon" translatesAutoresizingMaskIntoConstraints="NO" id="gF6-eB-ycf">
+                                <rect key="frame" x="7" y="13" width="17" height="15"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大柏树店" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CE5-jr-h6X">
+                                <rect key="frame" x="34" y="11" width="65.5" height="19.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <color key="textColor" red="0.81568627449999997" green="0.58039215690000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市虹口区中国蓝桥创意园 683弄" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZbH-BC-MXM">
+                                <rect key="frame" x="34" y="38" width="198" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.1km" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vah-wI-g8D">
+                                <rect key="frame" x="335.5" y="14" width="31.5" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="vah-wI-g8D" secondAttribute="trailing" constant="8" id="9KJ-P4-yed"/>
+                            <constraint firstItem="ZbH-BC-MXM" firstAttribute="leading" secondItem="CE5-jr-h6X" secondAttribute="leading" id="HxF-RJ-FEa"/>
+                            <constraint firstItem="gF6-eB-ycf" firstAttribute="leading" secondItem="zXz-Xf-g5P" secondAttribute="leading" constant="7" id="doj-1h-OvU"/>
+                            <constraint firstItem="CE5-jr-h6X" firstAttribute="leading" secondItem="gF6-eB-ycf" secondAttribute="trailing" constant="10" id="gxi-6A-kFC"/>
+                            <constraint firstItem="gF6-eB-ycf" firstAttribute="top" secondItem="zXz-Xf-g5P" secondAttribute="top" constant="13" id="hel-RH-aIT"/>
+                            <constraint firstItem="CE5-jr-h6X" firstAttribute="centerY" secondItem="gF6-eB-ycf" secondAttribute="centerY" id="kEs-Y7-gGB"/>
+                            <constraint firstItem="ZbH-BC-MXM" firstAttribute="top" secondItem="CE5-jr-h6X" secondAttribute="bottom" constant="7.5" id="ncJ-2M-Zyo"/>
+                            <constraint firstItem="vah-wI-g8D" firstAttribute="centerY" secondItem="CE5-jr-h6X" secondAttribute="centerY" id="tq3-MO-kaB"/>
+                            <constraint firstAttribute="bottom" secondItem="ZbH-BC-MXM" secondAttribute="bottom" constant="9" id="xHW-A7-Mzs"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="zXz-Xf-g5P" firstAttribute="leading" secondItem="y0g-FP-alH" secondAttribute="leading" id="JVy-ta-D4w"/>
+                    <constraint firstAttribute="bottom" secondItem="zXz-Xf-g5P" secondAttribute="bottom" id="h4R-gn-C0i"/>
+                    <constraint firstAttribute="trailing" secondItem="zXz-Xf-g5P" secondAttribute="trailing" id="mhE-fF-XJG"/>
+                    <constraint firstItem="zXz-Xf-g5P" firstAttribute="top" secondItem="y0g-FP-alH" secondAttribute="top" id="olC-ND-s3k"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="addressLb" destination="ZbH-BC-MXM" id="bBt-2t-DK0"/>
+                <outlet property="distanceLb" destination="vah-wI-g8D" id="DZE-0U-tKm"/>
+                <outlet property="nameLb" destination="CE5-jr-h6X" id="zsV-zB-075"/>
+            </connections>
+            <point key="canvasLocation" x="-105.5" y="-400"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="mendianicon" width="17" height="15"/>
+    </resources>
+</document>

@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentView" customModule="BLProject" customModuleProvider="target">
+            <connections>
+                <outlet property="contentLb" destination="qaS-rD-Fob" id="ktX-N3-5xq"/>
+                <outlet property="nameLb" destination="zvW-ce-Iin" id="amN-tV-Sfd"/>
+                <outlet property="starRatingView" destination="E4d-kg-M3l" id="DgY-0u-RGj"/>
+                <outlet property="timeLb" destination="1js-2z-vBY" id="ZxC-7x-uTe"/>
+                <outlet property="userIcon" destination="gwn-ui-VBe" id="WJK-dl-YPB"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="103"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pingjiatou x" translatesAutoresizingMaskIntoConstraints="NO" id="gwn-ui-VBe">
+                    <rect key="frame" x="16" y="11" width="35" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="gwn-ui-VBe" secondAttribute="height" multiplier="1:1" id="GFa-CZ-0nu"/>
+                        <constraint firstAttribute="width" constant="35" id="uVh-Sq-04l"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="冰与火的世界" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvW-ce-Iin">
+                    <rect key="frame" x="63" y="11" width="86" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016-1-12 12：22" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1js-2z-vBY">
+                    <rect key="frame" x="63" y="30" width="93.5" height="13.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                    <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E4d-kg-M3l" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
+                    <rect key="frame" x="291" y="23" width="68" height="11"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="68" id="alC-o0-weA"/>
+                        <constraint firstAttribute="height" constant="11" id="g3C-5f-mNU"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="commentoff"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="commenton"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="泡发率很高，每天都在吃，非常满意，期待有好的效果每天都在吃，非常满意，期待有好的效果" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qaS-rD-Fob">
+                    <rect key="frame" x="16" y="61" width="343" height="33.5"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="qaS-rD-Fob" firstAttribute="leading" secondItem="gwn-ui-VBe" secondAttribute="leading" id="2M6-7K-GbY"/>
+                <constraint firstItem="zvW-ce-Iin" firstAttribute="leading" secondItem="gwn-ui-VBe" secondAttribute="trailing" constant="12" id="3kd-3X-XUL"/>
+                <constraint firstItem="qaS-rD-Fob" firstAttribute="trailing" secondItem="E4d-kg-M3l" secondAttribute="trailing" id="54b-Ge-ze0"/>
+                <constraint firstItem="gwn-ui-VBe" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="16" id="CDm-nl-BvC"/>
+                <constraint firstItem="gwn-ui-VBe" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="11" id="EIr-LK-5cF"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="qaS-rD-Fob" secondAttribute="bottom" constant="8.5" id="Iex-gD-HYo"/>
+                <constraint firstItem="qaS-rD-Fob" firstAttribute="top" secondItem="gwn-ui-VBe" secondAttribute="bottom" constant="15" id="PAE-O4-xra"/>
+                <constraint firstItem="zvW-ce-Iin" firstAttribute="top" secondItem="gwn-ui-VBe" secondAttribute="top" id="XoL-9d-5E0"/>
+                <constraint firstItem="1js-2z-vBY" firstAttribute="leading" secondItem="zvW-ce-Iin" secondAttribute="leading" id="aVD-lg-eL0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="E4d-kg-M3l" secondAttribute="trailing" constant="16" id="eSy-4G-iRT"/>
+                <constraint firstItem="1js-2z-vBY" firstAttribute="top" secondItem="zvW-ce-Iin" secondAttribute="bottom" constant="2" id="h47-Zr-Jph"/>
+                <constraint firstItem="E4d-kg-M3l" firstAttribute="centerY" secondItem="gwn-ui-VBe" secondAttribute="centerY" id="xNW-lb-cte"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="33.5" y="-223.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commentoff" width="11" height="11"/>
+        <image name="commenton" width="11" height="11"/>
+        <image name="pingjiatou x" width="35" height="35"/>
+    </resources>
+</document>

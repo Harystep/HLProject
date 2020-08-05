@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MealCodeViewController" customModule="BLProject" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLb" destination="u50-Nq-Xvq" id="CHH-W3-MB3"/>
+                <outlet property="codeLb" destination="n3h-eu-FYe" id="r8y-xd-NsG"/>
+                <outlet property="mainBackView" destination="xPK-d9-LQs" id="cZ9-mo-Ex6"/>
+                <outlet property="naviBack" destination="pPF-AL-wj6" id="1YK-is-4c2"/>
+                <outlet property="phoneLb" destination="Pzg-Rr-aNY" id="qQr-Lr-GbX"/>
+                <outlet property="timeLb" destination="eT5-LT-m6O" id="s2H-aO-vFI"/>
+                <outlet property="view" destination="Y2r-If-f7P" id="s6i-W3-jmc"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="Y2r-If-f7P">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pPF-AL-wj6">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" placeholder="YES" id="tiV-tE-vrN"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xPK-d9-LQs">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codebj" translatesAutoresizingMaskIntoConstraints="NO" id="Ot6-xF-mVf">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        </imageView>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="codebj2" translatesAutoresizingMaskIntoConstraints="NO" id="LXW-WL-wo2">
+                            <rect key="frame" x="20" y="35" width="335" height="351"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="您的取餐码为" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wk1-bD-VGB">
+                            <rect key="frame" x="138.5" y="169" width="98" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234321" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n3h-eu-FYe">
+                            <rect key="frame" x="98.5" y="209.5" width="178" height="55"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="46"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="时间：2018.6.21  09:00-12:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eT5-LT-m6O">
+                            <rect key="frame" x="47.5" y="396" width="194" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="地址：上海市宝山区沪太路2965号尊木汇点" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="u50-Nq-Xvq">
+                            <rect key="frame" x="47.5" y="415" width="277.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" alpha="0.60000002384185791" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="021- 37733773" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pzg-Rr-aNY" userLabel="地址：上海市宝山区沪太路2965号尊木汇点              021- 37733773">
+                            <rect key="frame" x="92.5" y="434" width="232.5" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Ot6-xF-mVf" secondAttribute="trailing" id="152-bs-iMy"/>
+                        <constraint firstItem="wk1-bD-VGB" firstAttribute="top" secondItem="LXW-WL-wo2" secondAttribute="top" constant="134" id="1Qg-Oa-zdM"/>
+                        <constraint firstItem="eT5-LT-m6O" firstAttribute="top" secondItem="LXW-WL-wo2" secondAttribute="bottom" constant="10" id="3YE-VM-UkN"/>
+                        <constraint firstItem="n3h-eu-FYe" firstAttribute="top" secondItem="wk1-bD-VGB" secondAttribute="bottom" constant="21" id="DmC-UA-m8H"/>
+                        <constraint firstItem="wk1-bD-VGB" firstAttribute="centerX" secondItem="LXW-WL-wo2" secondAttribute="centerX" id="GLP-Ef-MNv"/>
+                        <constraint firstItem="Ot6-xF-mVf" firstAttribute="top" secondItem="xPK-d9-LQs" secondAttribute="top" id="Myg-KU-4Lq"/>
+                        <constraint firstItem="u50-Nq-Xvq" firstAttribute="top" secondItem="eT5-LT-m6O" secondAttribute="bottom" constant="2" id="WTu-3V-C4u"/>
+                        <constraint firstItem="Ot6-xF-mVf" firstAttribute="leading" secondItem="xPK-d9-LQs" secondAttribute="leading" id="YmK-QL-Seb"/>
+                        <constraint firstItem="Pzg-Rr-aNY" firstAttribute="top" secondItem="u50-Nq-Xvq" secondAttribute="bottom" constant="2" id="bbl-Z6-h7G"/>
+                        <constraint firstItem="Pzg-Rr-aNY" firstAttribute="trailing" secondItem="u50-Nq-Xvq" secondAttribute="trailing" id="fIm-wp-9yj"/>
+                        <constraint firstItem="Pzg-Rr-aNY" firstAttribute="leading" secondItem="u50-Nq-Xvq" secondAttribute="leading" constant="45" id="gVs-61-vBs"/>
+                        <constraint firstItem="u50-Nq-Xvq" firstAttribute="leading" secondItem="eT5-LT-m6O" secondAttribute="leading" id="o8o-xZ-80f"/>
+                        <constraint firstItem="eT5-LT-m6O" firstAttribute="leading" secondItem="LXW-WL-wo2" secondAttribute="leading" constant="27.5" id="qW6-EA-qLR"/>
+                        <constraint firstItem="n3h-eu-FYe" firstAttribute="centerX" secondItem="wk1-bD-VGB" secondAttribute="centerX" id="sda-V7-fPQ"/>
+                        <constraint firstAttribute="bottom" secondItem="Ot6-xF-mVf" secondAttribute="bottom" id="wbp-pG-sZu"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="LXW-WL-wo2" firstAttribute="top" secondItem="pPF-AL-wj6" secondAttribute="bottom" constant="35" id="ICh-WZ-niM"/>
+                <constraint firstItem="LXW-WL-wo2" firstAttribute="centerX" secondItem="pPF-AL-wj6" secondAttribute="centerX" id="Q3p-65-u41"/>
+                <constraint firstItem="xPK-d9-LQs" firstAttribute="top" secondItem="pPF-AL-wj6" secondAttribute="bottom" id="Qyx-vl-B5u"/>
+                <constraint firstItem="6JP-7m-IwZ" firstAttribute="bottom" secondItem="xPK-d9-LQs" secondAttribute="bottom" id="ZDc-LS-6gL"/>
+                <constraint firstAttribute="top" secondItem="pPF-AL-wj6" secondAttribute="top" id="ZKR-oa-fce"/>
+                <constraint firstItem="6JP-7m-IwZ" firstAttribute="trailing" secondItem="xPK-d9-LQs" secondAttribute="trailing" id="i4S-lP-xV9"/>
+                <constraint firstItem="pPF-AL-wj6" firstAttribute="leading" secondItem="6JP-7m-IwZ" secondAttribute="leading" id="sfF-Xd-Cue"/>
+                <constraint firstItem="6JP-7m-IwZ" firstAttribute="trailing" secondItem="pPF-AL-wj6" secondAttribute="trailing" id="z96-N9-uD3"/>
+                <constraint firstItem="xPK-d9-LQs" firstAttribute="leading" secondItem="6JP-7m-IwZ" secondAttribute="leading" id="zQ1-3K-I97"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="6JP-7m-IwZ"/>
+            <point key="canvasLocation" x="-234.40000000000001" y="-51.724137931034484"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="codebj" width="375" height="667"/>
+        <image name="codebj2" width="335" height="351"/>
+    </resources>
+</document>

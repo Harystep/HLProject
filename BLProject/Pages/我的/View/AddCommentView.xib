@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentView" customModule="BLProject" customModuleProvider="target">
+            <connections>
+                <outlet property="commentTextView" destination="gqF-Sh-3Ov" id="kdv-eT-BVN"/>
+                <outlet property="descLb" destination="QuJ-OL-3ua" id="abM-2u-5qO"/>
+                <outlet property="infoLb" destination="xGF-XO-lJ7" id="lIV-3j-NJP"/>
+                <outlet property="mainImage" destination="ggc-fp-IHp" id="BUj-e2-M3a"/>
+                <outlet property="starRateView" destination="ORA-el-tYL" id="XDs-Lg-MUn"/>
+                <outlet property="titlelb" destination="OXW-MU-Gmh" id="ohk-Xv-V48"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="287"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XAl-Ko-YFu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="149"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="caidantu pian" translatesAutoresizingMaskIntoConstraints="NO" id="ggc-fp-IHp">
+                            <rect key="frame" x="20" y="13" width="130" height="120"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="130" id="3Ot-VI-iiq"/>
+                                <constraint firstAttribute="width" secondItem="ggc-fp-IHp" secondAttribute="height" multiplier="13:12" id="ezr-Uh-4jI"/>
+                            </constraints>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="养生燕窝" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OXW-MU-Gmh">
+                            <rect key="frame" x="166" y="13" width="73.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="凝丝成盏，缕缕柔滑" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QuJ-OL-3ua">
+                            <rect key="frame" x="166" y="38" width="129" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="规格：70ml*5瓶" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xGF-XO-lJ7">
+                            <rect key="frame" x="166" y="116" width="104" height="17"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <color key="textColor" red="0.59999999999999998" green="0.59999999999999998" blue="0.59999999999999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="OXW-MU-Gmh" firstAttribute="top" secondItem="ggc-fp-IHp" secondAttribute="top" id="9GX-VP-1uV"/>
+                        <constraint firstItem="xGF-XO-lJ7" firstAttribute="leading" secondItem="QuJ-OL-3ua" secondAttribute="leading" id="BnZ-S8-DRb"/>
+                        <constraint firstItem="OXW-MU-Gmh" firstAttribute="leading" secondItem="ggc-fp-IHp" secondAttribute="trailing" constant="16" id="Jj7-G7-gBA"/>
+                        <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="OXW-MU-Gmh" secondAttribute="trailing" constant="15" id="L2o-U9-V1n"/>
+                        <constraint firstAttribute="bottom" secondItem="ggc-fp-IHp" secondAttribute="bottom" constant="16" id="WCJ-R1-k13"/>
+                        <constraint firstItem="xGF-XO-lJ7" firstAttribute="bottom" secondItem="ggc-fp-IHp" secondAttribute="bottom" id="cYd-jH-kEd"/>
+                        <constraint firstItem="QuJ-OL-3ua" firstAttribute="leading" secondItem="OXW-MU-Gmh" secondAttribute="leading" id="eQE-jW-iHV"/>
+                        <constraint firstItem="ggc-fp-IHp" firstAttribute="leading" secondItem="XAl-Ko-YFu" secondAttribute="leading" constant="20" id="net-ej-JQ8"/>
+                        <constraint firstItem="QuJ-OL-3ua" firstAttribute="top" secondItem="OXW-MU-Gmh" secondAttribute="bottom" constant="4" id="yGJ-6m-0eC"/>
+                        <constraint firstItem="ggc-fp-IHp" firstAttribute="top" secondItem="XAl-Ko-YFu" secondAttribute="top" constant="13" id="z3a-2E-fji"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="maskToBounds" value="YES"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="评价" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="beD-on-H8q">
+                    <rect key="frame" x="20" y="166.5" width="29" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ORA-el-tYL" customClass="SwiftyStarRatingView" customModule="SwiftyStarRatingView">
+                    <rect key="frame" x="70" y="166" width="129" height="18"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="129" id="Rwm-Gk-nj7"/>
+                        <constraint firstAttribute="height" constant="18" id="v3j-4x-01O"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="number" keyPath="maximumValue">
+                            <real key="value" value="5"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="minimumValue">
+                            <real key="value" value="1"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="value">
+                            <real key="value" value="3"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="number" keyPath="spacing">
+                            <real key="value" value="6"/>
+                        </userDefinedRuntimeAttribute>
+                        <userDefinedRuntimeAttribute type="image" keyPath="emptyStarImage" value="commentoff"/>
+                        <userDefinedRuntimeAttribute type="image" keyPath="filledStarImage" value="commenton"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="allowsHalfStars" value="NO"/>
+                    </userDefinedRuntimeAttributes>
+                </view>
+                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="gqF-Sh-3Ov" customClass="PlaceholderTextView" customModule="PlaceholderTextView">
+                    <rect key="frame" x="20" y="197.5" width="335" height="69"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="69" id="WiO-wR-AZG"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="对商品有什么心得，可以写在这里哦"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
+                            <color key="value" red="0.70196078431372544" green="0.70196078431372544" blue="0.70196078431372544" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </textView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="gqF-Sh-3Ov" firstAttribute="leading" secondItem="beD-on-H8q" secondAttribute="leading" id="0FM-gv-Gbe"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="XAl-Ko-YFu" secondAttribute="top" id="245-lD-IBD"/>
+                <constraint firstItem="gqF-Sh-3Ov" firstAttribute="top" secondItem="beD-on-H8q" secondAttribute="bottom" constant="14" id="3uA-yk-A70"/>
+                <constraint firstItem="ORA-el-tYL" firstAttribute="centerY" secondItem="beD-on-H8q" secondAttribute="centerY" id="Aut-sE-yw3"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="XAl-Ko-YFu" secondAttribute="trailing" id="MNX-bx-Oyy"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="gqF-Sh-3Ov" secondAttribute="bottom" constant="20.5" id="QuQ-KG-IuD"/>
+                <constraint firstItem="ORA-el-tYL" firstAttribute="leading" secondItem="beD-on-H8q" secondAttribute="trailing" constant="21" id="cLK-0V-1nU"/>
+                <constraint firstItem="XAl-Ko-YFu" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eOj-Cf-9tk"/>
+                <constraint firstItem="beD-on-H8q" firstAttribute="top" secondItem="XAl-Ko-YFu" secondAttribute="bottom" constant="17.699999999999999" id="gTB-LM-rR9"/>
+                <constraint firstItem="beD-on-H8q" firstAttribute="leading" secondItem="ggc-fp-IHp" secondAttribute="leading" id="rD0-YH-6cg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gqF-Sh-3Ov" secondAttribute="trailing" constant="20" id="zMF-7Q-cjx"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="-91.5" y="-173.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="caidantu pian" width="130" height="120"/>
+        <image name="commentoff" width="11" height="11"/>
+        <image name="commenton" width="11" height="11"/>
+    </resources>
+</document>

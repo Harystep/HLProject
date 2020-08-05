@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddCommentViewController" customModule="BLProject" customModuleProvider="target">
+            <connections>
+                <outlet property="cardBackView" destination="xMO-l8-pkW" id="ta8-Rq-Z5i"/>
+                <outlet property="mainBackView" destination="yyv-kC-oAO" id="aIF-g3-Yrd"/>
+                <outlet property="naviBack" destination="aDb-dI-8ia" id="8Yc-aB-LzN"/>
+                <outlet property="submitBt" destination="fnC-Bu-G19" id="2A4-iH-Jtw"/>
+                <outlet property="view" destination="iMb-0O-s43" id="o1V-ZR-zGW"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="iMb-0O-s43">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aDb-dI-8ia">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" placeholder="YES" id="qHL-1H-YIb"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yyv-kC-oAO">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <subviews>
+                        <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BVs-ro-I4L">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                            <subviews>
+                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xMO-l8-pkW">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" constant="667" placeholder="YES" id="5xu-Rw-66V"/>
+                                    </constraints>
+                                </view>
+                            </subviews>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="xMO-l8-pkW" secondAttribute="bottom" id="7H7-2h-nPV"/>
+                                <constraint firstAttribute="trailing" secondItem="xMO-l8-pkW" secondAttribute="trailing" id="L5y-tG-WUQ"/>
+                                <constraint firstItem="xMO-l8-pkW" firstAttribute="top" secondItem="BVs-ro-I4L" secondAttribute="top" id="QZR-Lo-m0Z"/>
+                                <constraint firstItem="xMO-l8-pkW" firstAttribute="leading" secondItem="BVs-ro-I4L" secondAttribute="leading" id="tdN-Nc-aqN"/>
+                            </constraints>
+                        </scrollView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="BVs-ro-I4L" firstAttribute="leading" secondItem="yyv-kC-oAO" secondAttribute="leading" id="BeT-GW-z2C"/>
+                        <constraint firstAttribute="trailing" secondItem="BVs-ro-I4L" secondAttribute="trailing" id="Cik-9C-XwD"/>
+                        <constraint firstItem="xMO-l8-pkW" firstAttribute="width" secondItem="yyv-kC-oAO" secondAttribute="width" id="PR7-cn-XiQ"/>
+                        <constraint firstItem="BVs-ro-I4L" firstAttribute="top" secondItem="yyv-kC-oAO" secondAttribute="top" id="fYX-OZ-QjF"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fnC-Bu-G19">
+                    <rect key="frame" x="0.0" y="618" width="375" height="49"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="49" id="FV8-UN-jaq"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <state key="normal" title="提交" backgroundImage="commentbnt">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnC-Bu-G19" firstAttribute="bottom" secondItem="yyv-kC-oAO" secondAttribute="bottom" id="FCc-Ob-PGX"/>
+                <constraint firstItem="kJZ-07-WS8" firstAttribute="trailing" secondItem="yyv-kC-oAO" secondAttribute="trailing" id="H4H-zs-BGV"/>
+                <constraint firstItem="fnC-Bu-G19" firstAttribute="trailing" secondItem="yyv-kC-oAO" secondAttribute="trailing" id="Jqv-L8-ZCW"/>
+                <constraint firstItem="fnC-Bu-G19" firstAttribute="leading" secondItem="yyv-kC-oAO" secondAttribute="leading" id="PTW-1E-bCJ"/>
+                <constraint firstItem="kJZ-07-WS8" firstAttribute="bottom" secondItem="yyv-kC-oAO" secondAttribute="bottom" id="hsG-p9-hDE"/>
+                <constraint firstItem="yyv-kC-oAO" firstAttribute="leading" secondItem="kJZ-07-WS8" secondAttribute="leading" id="kOt-hB-5KI"/>
+                <constraint firstAttribute="top" secondItem="aDb-dI-8ia" secondAttribute="top" id="kW5-id-sNW"/>
+                <constraint firstItem="fnC-Bu-G19" firstAttribute="top" secondItem="BVs-ro-I4L" secondAttribute="bottom" id="uPS-XY-mUn"/>
+                <constraint firstItem="aDb-dI-8ia" firstAttribute="leading" secondItem="kJZ-07-WS8" secondAttribute="leading" id="vaf-XF-Hh9"/>
+                <constraint firstItem="yyv-kC-oAO" firstAttribute="top" secondItem="aDb-dI-8ia" secondAttribute="bottom" id="y8e-6m-zRQ"/>
+                <constraint firstItem="kJZ-07-WS8" firstAttribute="trailing" secondItem="aDb-dI-8ia" secondAttribute="trailing" id="zXJ-om-LHd"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="kJZ-07-WS8"/>
+            <point key="canvasLocation" x="-233.5" y="-51.5"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="commentbnt" width="376" height="42"/>
+    </resources>
+</document>

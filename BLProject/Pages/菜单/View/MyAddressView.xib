@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MyAddressView" customModule="BLProject" customModuleProvider="target">
+            <connections>
+                <outlet property="addressLb" destination="pIh-76-7kJ" id="LVf-lm-ShB"/>
+                <outlet property="nameLb" destination="fiz-QH-otF" id="x8M-1V-I0s"/>
+                <outlet property="phoneLb" destination="pa3-6L-WwA" id="0nu-3z-QiN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TIM-qW-kJv">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="63"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3JL-ab-1Na">
+                    <rect key="frame" x="0.0" y="12" width="375" height="39"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="何芳" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fiz-QH-otF">
+                            <rect key="frame" x="0.0" y="0.0" width="33" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="上海市虹口区中国蓝桥创意园 683弄" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pIh-76-7kJ">
+                            <rect key="frame" x="0.0" y="24.5" width="375" height="14.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1811111111" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pa3-6L-WwA">
+                            <rect key="frame" x="53" y="0.0" width="74.5" height="19.5"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="fiz-QH-otF" firstAttribute="leading" secondItem="3JL-ab-1Na" secondAttribute="leading" id="6fE-WC-VsT"/>
+                        <constraint firstAttribute="bottom" secondItem="pIh-76-7kJ" secondAttribute="bottom" id="8EV-iM-K5y"/>
+                        <constraint firstItem="pIh-76-7kJ" firstAttribute="leading" secondItem="3JL-ab-1Na" secondAttribute="leading" id="OMq-ln-jv3"/>
+                        <constraint firstItem="pIh-76-7kJ" firstAttribute="width" secondItem="3JL-ab-1Na" secondAttribute="width" id="R4Z-bm-Y0C"/>
+                        <constraint firstAttribute="trailing" secondItem="pIh-76-7kJ" secondAttribute="trailing" id="TA7-ej-318"/>
+                        <constraint firstItem="pa3-6L-WwA" firstAttribute="centerY" secondItem="fiz-QH-otF" secondAttribute="centerY" id="Uyz-iT-nwu"/>
+                        <constraint firstItem="pa3-6L-WwA" firstAttribute="leading" secondItem="fiz-QH-otF" secondAttribute="trailing" constant="20" id="c97-6H-qmp"/>
+                        <constraint firstItem="fiz-QH-otF" firstAttribute="top" secondItem="3JL-ab-1Na" secondAttribute="top" id="ncn-0j-m3g"/>
+                        <constraint firstItem="pIh-76-7kJ" firstAttribute="top" secondItem="fiz-QH-otF" secondAttribute="bottom" constant="5" id="ozT-Md-Art"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3JL-ab-1Na" firstAttribute="top" secondItem="iGr-cE-uB6" secondAttribute="top" constant="12" id="Aao-xr-wo9"/>
+                <constraint firstItem="3JL-ab-1Na" firstAttribute="leading" secondItem="iGr-cE-uB6" secondAttribute="leading" id="E0W-3q-f9v"/>
+                <constraint firstItem="iGr-cE-uB6" firstAttribute="bottom" secondItem="3JL-ab-1Na" secondAttribute="bottom" constant="12" id="arK-vX-KZI"/>
+                <constraint firstItem="iGr-cE-uB6" firstAttribute="trailing" secondItem="3JL-ab-1Na" secondAttribute="trailing" id="vdB-Da-k7A"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="iGr-cE-uB6"/>
+            <point key="canvasLocation" x="172" y="-20"/>
+        </view>
+    </objects>
+</document>
